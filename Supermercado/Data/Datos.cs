@@ -8,7 +8,7 @@ using Npgsql;
 
 namespace Supermercado.Data
 {
-    public class Datos
+    internal class Datos
     {
         private string connectionString =
             "Host=localhost;Username=admin;Password=admin;" +

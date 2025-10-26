@@ -30,5 +30,11 @@ namespace Supermercado
             frmClientes c = new frmClientes();
             c.Show();
         }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            frmEmpleados emp = new frmEmpleados();
+            emp.ShowDialog();
+        }
     }
 }

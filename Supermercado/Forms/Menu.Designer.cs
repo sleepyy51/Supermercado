@@ -2,169 +2,196 @@
 {
     partial class frmMenu
     {
-        /// <summary>
-        /// Variable del diseñador necesaria.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Limpiar los recursos que se estén usando.
-        /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
         #region Código generado por el Diseñador de Windows Forms
 
-        /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblSubtitulo = new System.Windows.Forms.Label();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnFacturas = new System.Windows.Forms.Button();
+            this.btnProductos = new System.Windows.Forms.Button();
+            this.btnProveedores = new System.Windows.Forms.Button();
+            this.btnVentas = new System.Windows.Forms.Button();
             this.labHora = new System.Windows.Forms.Label();
-            this.tmrHora = new System.Windows.Forms.Timer(this.components);
             this.labFecha = new System.Windows.Forms.Label();
+            this.tmrHora = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // label1
+            // lblTitulo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bienvenido";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(60)))));
+            this.lblTitulo.Location = new System.Drawing.Point(35, 30);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(153, 37);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Bienvenido";
             // 
-            // label2
+            // lblSubtitulo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Seleccione una opción";
+            this.lblSubtitulo.AutoSize = true;
+            this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblSubtitulo.ForeColor = System.Drawing.Color.Gray;
+            this.lblSubtitulo.Location = new System.Drawing.Point(37, 70);
+            this.lblSubtitulo.Name = "lblSubtitulo";
+            this.lblSubtitulo.Size = new System.Drawing.Size(272, 21);
+            this.lblSubtitulo.TabIndex = 1;
+            this.lblSubtitulo.Text = "Seleccione una opción para continuar:";
             // 
-            // button1
+            // btnClientes
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(34, 110);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Clientes";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnClientes.ForeColor = System.Drawing.Color.White;
+            this.btnClientes.Location = new System.Drawing.Point(40, 120);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(200, 40);
+            this.btnClientes.TabIndex = 2;
+            this.btnClientes.Text = "🧍 Clientes";
+            this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnEmpleados
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(34, 150);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 35);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Empleados";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.btnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnEmpleados.ForeColor = System.Drawing.Color.White;
+            this.btnEmpleados.Location = new System.Drawing.Point(40, 170);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(200, 40);
+            this.btnEmpleados.TabIndex = 3;
+            this.btnEmpleados.Text = "👷 Empleados";
+            this.btnEmpleados.UseVisualStyleBackColor = false;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
-            // button3
+            // btnFacturas
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(34, 191);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 35);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Facturas";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnFacturas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.btnFacturas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFacturas.FlatAppearance.BorderSize = 0;
+            this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturas.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnFacturas.ForeColor = System.Drawing.Color.White;
+            this.btnFacturas.Location = new System.Drawing.Point(40, 220);
+            this.btnFacturas.Name = "btnFacturas";
+            this.btnFacturas.Size = new System.Drawing.Size(200, 40);
+            this.btnFacturas.TabIndex = 4;
+            this.btnFacturas.Text = "🧾 Facturas";
+            this.btnFacturas.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnProductos
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(34, 232);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 37);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Productos";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.btnProductos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnProductos.ForeColor = System.Drawing.Color.White;
+            this.btnProductos.Location = new System.Drawing.Point(40, 270);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(200, 40);
+            this.btnProductos.TabIndex = 5;
+            this.btnProductos.Text = "📦 Productos";
+            this.btnProductos.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnProveedores
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(34, 275);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 33);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Proveedores";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProveedores.FlatAppearance.BorderSize = 0;
+            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedores.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnProveedores.ForeColor = System.Drawing.Color.White;
+            this.btnProveedores.Location = new System.Drawing.Point(40, 320);
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.Size = new System.Drawing.Size(200, 40);
+            this.btnProveedores.TabIndex = 6;
+            this.btnProveedores.Text = "🚚 Proveedores";
+            this.btnProveedores.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnVentas
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(34, 314);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(129, 32);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Ventas";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.btnVentas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVentas.FlatAppearance.BorderSize = 0;
+            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentas.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnVentas.ForeColor = System.Drawing.Color.White;
+            this.btnVentas.Location = new System.Drawing.Point(40, 370);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(200, 40);
+            this.btnVentas.TabIndex = 7;
+            this.btnVentas.Text = "💰 Ventas";
+            this.btnVentas.UseVisualStyleBackColor = false;
             // 
             // labHora
             // 
             this.labHora.AutoSize = true;
-            this.labHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labHora.Location = new System.Drawing.Point(233, 73);
+            this.labHora.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.labHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.labHora.Location = new System.Drawing.Point(310, 150);
             this.labHora.Name = "labHora";
-            this.labHora.Size = new System.Drawing.Size(156, 25);
+            this.labHora.Size = new System.Drawing.Size(104, 32);
             this.labHora.TabIndex = 8;
-            this.labHora.Text = "Sin hora actual";
+            this.labHora.Text = "00:00:00";
+            // 
+            // labFecha
+            // 
+            this.labFecha.AutoSize = true;
+            this.labFecha.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.labFecha.ForeColor = System.Drawing.Color.Gray;
+            this.labFecha.Location = new System.Drawing.Point(315, 190);
+            this.labFecha.Name = "labFecha";
+            this.labFecha.Size = new System.Drawing.Size(118, 21);
+            this.labFecha.TabIndex = 9;
+            this.labFecha.Text = "Sin fecha actual";
             // 
             // tmrHora
             // 
             this.tmrHora.Enabled = true;
             this.tmrHora.Tick += new System.EventHandler(this.tmrHora_Tick);
             // 
-            // labFecha
-            // 
-            this.labFecha.AutoSize = true;
-            this.labFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labFecha.Location = new System.Drawing.Point(215, 36);
-            this.labFecha.Name = "labFecha";
-            this.labFecha.Size = new System.Drawing.Size(142, 24);
-            this.labFecha.TabIndex = 9;
-            this.labFecha.Text = "Sin fecha actual";
-            // 
             // frmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 371);
-            this.Controls.Add(this.labFecha);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(600, 420);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.lblSubtitulo);
+            this.Controls.Add(this.btnClientes);
+            this.Controls.Add(this.btnEmpleados);
+            this.Controls.Add(this.btnFacturas);
+            this.Controls.Add(this.btnProductos);
+            this.Controls.Add(this.btnProveedores);
+            this.Controls.Add(this.btnVentas);
             this.Controls.Add(this.labHora);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labFecha);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmMenu";
-            this.Text = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menú Principal - Supermercado";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,17 +199,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblSubtitulo;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnEmpleados;
+        private System.Windows.Forms.Button btnFacturas;
+        private System.Windows.Forms.Button btnProductos;
+        private System.Windows.Forms.Button btnProveedores;
+        private System.Windows.Forms.Button btnVentas;
         private System.Windows.Forms.Label labHora;
-        private System.Windows.Forms.Timer tmrHora;
         private System.Windows.Forms.Label labFecha;
+        private System.Windows.Forms.Timer tmrHora;
     }
 }
-
