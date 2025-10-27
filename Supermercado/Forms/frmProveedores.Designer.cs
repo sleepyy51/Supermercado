@@ -18,6 +18,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -30,25 +31,15 @@
             this.cmsProveedores.SuspendLayout();
             this.SuspendLayout();
             // 
-            // frmProveedores
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(820, 500);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gestión de Proveedores";
-            this.Load += new System.EventHandler(this.frmProveedores_Load);
-            // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(45, 62, 80);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.lblTitulo.Location = new System.Drawing.Point(30, 25);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(166, 30);
+            this.lblTitulo.Size = new System.Drawing.Size(137, 30);
+            this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "Proveedores";
             // 
             // lblBuscar
@@ -58,7 +49,8 @@
             this.lblBuscar.ForeColor = System.Drawing.Color.DimGray;
             this.lblBuscar.Location = new System.Drawing.Point(32, 85);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(111, 19);
+            this.lblBuscar.Size = new System.Drawing.Size(116, 19);
+            this.lblBuscar.TabIndex = 2;
             this.lblBuscar.Text = "Buscar proveedor";
             // 
             // txtBuscar
@@ -69,10 +61,11 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(330, 25);
             this.txtBuscar.TabIndex = 0;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(52, 152, 219);
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
@@ -94,13 +87,9 @@
             this.dgvProveedores.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvProveedores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvProveedores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvProveedores.ColumnHeadersDefaultCellStyle = new System.Windows.Forms.DataGridViewCellStyle()
-            {
-                BackColor = System.Drawing.Color.FromArgb(52, 152, 219),
-                ForeColor = System.Drawing.Color.White,
-                Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold),
-                Padding = new System.Windows.Forms.Padding(5)
-            };
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dgvProveedores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProveedores.ContextMenuStrip = this.cmsProveedores;
             this.dgvProveedores.EnableHeadersVisualStyles = false;
             this.dgvProveedores.GridColor = System.Drawing.Color.LightGray;
             this.dgvProveedores.Location = new System.Drawing.Point(35, 130);
@@ -112,7 +101,6 @@
             this.dgvProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProveedores.Size = new System.Drawing.Size(750, 330);
             this.dgvProveedores.TabIndex = 2;
-            this.dgvProveedores.ContextMenuStrip = this.cmsProveedores;
             // 
             // cmsProveedores
             // 
@@ -121,29 +109,38 @@
             this.editarToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.cmsProveedores.Name = "cmsProveedores";
-            this.cmsProveedores.Size = new System.Drawing.Size(132, 52);
+            this.cmsProveedores.Size = new System.Drawing.Size(127, 52);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(131, 24);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(126, 24);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(131, 24);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(126, 24);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // frmProveedores
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(820, 500);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvProveedores);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Name = "frmProveedores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gestión de Proveedores";
+            this.Load += new System.EventHandler(this.frmProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).EndInit();
             this.cmsProveedores.ResumeLayout(false);
             this.ResumeLayout(false);

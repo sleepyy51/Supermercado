@@ -76,5 +76,18 @@ namespace Supermercado.Forms
                 }
             }
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            DataSet ds = datos.getAllData("SELECT * FROM \"proveedores\" Where empresa ilike '" + txtBuscar.Text + "%' OR tipo_producto ilike '" + txtBuscar.Text + "' OR email ilike '" + txtBuscar.Text + "%';");
+            if (ds != null)
+            {
+                dgvProveedores.DataSource = ds.Tables[0];
+            }
+            else
+            {
+                MessageBox.Show("Error al cargar los datos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

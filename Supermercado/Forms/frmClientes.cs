@@ -67,6 +67,10 @@ namespace Supermercado.Forms
             string r = dgvClientes[0, dgvClientes.CurrentCell.RowIndex].Value.ToString();
             frmAgregarClientes box = new frmAgregarClientes(Convert.ToInt32(r));
             box.ShowDialog();
+            if (box.IsDisposed)
+            {
+                mostrarDatos();
+            }
         }
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)

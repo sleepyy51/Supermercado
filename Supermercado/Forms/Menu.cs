@@ -51,7 +51,8 @@ namespace Supermercado
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
-
+            frmVentas v = new frmVentas();
+            v.ShowDialog();
         }
     }
 }

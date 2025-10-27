@@ -116,6 +116,12 @@
     <Compile Include="Forms\frmAgregarFacturas.Designer.cs">
       <DependentUpon>frmAgregarFacturas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmAgregarVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAgregarVentas.Designer.cs">
+      <DependentUpon>frmAgregarVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,12 @@
     <Compile Include="Forms\frmProveedores.Designer.cs">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVentas.Designer.cs">
+      <DependentUpon>frmVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAgregarFacturas.resx">
       <DependentUpon>frmAgregarFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAgregarVentas.resx">
+      <DependentUpon>frmAgregarVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
@@ -183,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmProveedores.resx">
       <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVentas.resx">
+      <DependentUpon>frmVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
