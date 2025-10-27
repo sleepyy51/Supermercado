@@ -2,15 +2,8 @@
 {
     partial class frmAgregarProveedores
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,194 +15,169 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblEmpresa = new System.Windows.Forms.Label();
+            this.lblProducto = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblTelSec = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
+            this.txtProducto = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtTelSec = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Proveedores";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Empresa";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tipo de Producto";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 181);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Dirección";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 240);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Teléfono";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 301);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Teléfono Secundario";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(26, 356);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Email";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(29, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(29, 144);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(29, 197);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(29, 256);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 10;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(29, 317);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(29, 372);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 12;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(564, 134);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 13;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(564, 197);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 20);
-            this.btnCancelar.TabIndex = 14;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // frmAgregarProveedores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnCancelar);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(700, 500);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Agregar Proveedor";
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(45, 62, 80);
+            this.lblTitulo.Location = new System.Drawing.Point(35, 30);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(219, 30);
+            this.lblTitulo.Text = "Agregar Proveedor";
+            // 
+            // Etiquetas fijas
+            // 
+            this.lblEmpresa.AutoSize = true;
+            this.lblEmpresa.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblEmpresa.ForeColor = System.Drawing.Color.DimGray;
+            this.lblEmpresa.Location = new System.Drawing.Point(80, 100);
+            this.lblEmpresa.Text = "Empresa";
+
+            this.lblProducto.AutoSize = true;
+            this.lblProducto.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblProducto.ForeColor = System.Drawing.Color.DimGray;
+            this.lblProducto.Location = new System.Drawing.Point(80, 150);
+            this.lblProducto.Text = "Tipo de Producto";
+
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblDireccion.ForeColor = System.Drawing.Color.DimGray;
+            this.lblDireccion.Location = new System.Drawing.Point(80, 200);
+            this.lblDireccion.Text = "Dirección";
+
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblTelefono.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTelefono.Location = new System.Drawing.Point(80, 250);
+            this.lblTelefono.Text = "Teléfono Principal";
+
+            this.lblTelSec.AutoSize = true;
+            this.lblTelSec.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblTelSec.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTelSec.Location = new System.Drawing.Point(80, 300);
+            this.lblTelSec.Text = "Teléfono Secundario";
+
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblEmail.ForeColor = System.Drawing.Color.DimGray;
+            this.lblEmail.Location = new System.Drawing.Point(80, 350);
+            this.lblEmail.Text = "Correo Electrónico";
+            // 
+            // Textboxes fijas
+            // 
+            this.txtEmpresa.Location = new System.Drawing.Point(260, 97);
+            this.txtEmpresa.Size = new System.Drawing.Size(280, 25);
+
+            this.txtProducto.Location = new System.Drawing.Point(260, 147);
+            this.txtProducto.Size = new System.Drawing.Size(280, 25);
+
+            this.txtDireccion.Location = new System.Drawing.Point(260, 197);
+            this.txtDireccion.Size = new System.Drawing.Size(280, 25);
+
+            this.txtTelefono.Location = new System.Drawing.Point(260, 247);
+            this.txtTelefono.Size = new System.Drawing.Size(280, 25);
+
+            this.txtTelSec.Location = new System.Drawing.Point(260, 297);
+            this.txtTelSec.Size = new System.Drawing.Size(280, 25);
+
+            this.txtEmail.Location = new System.Drawing.Point(260, 347);
+            this.txtEmail.Size = new System.Drawing.Size(280, 25);
+            // 
+            // Botones fijos
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(52, 152, 219);
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(350, 430);
+            this.btnAgregar.Size = new System.Drawing.Size(120, 35);
+            this.btnAgregar.Text = "✅ Guardar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(231, 76, 60);
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(490, 430);
+            this.btnCancelar.Size = new System.Drawing.Size(120, 35);
+            this.btnCancelar.Text = "❌ Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+
+            // 
+            // Agregar controles al formulario
+            // 
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.lblEmpresa);
+            this.Controls.Add(this.lblProducto);
+            this.Controls.Add(this.lblDireccion);
+            this.Controls.Add(this.lblTelefono);
+            this.Controls.Add(this.lblTelSec);
+            this.Controls.Add(this.lblEmail);
+
+            this.Controls.Add(this.txtEmpresa);
+            this.Controls.Add(this.txtProducto);
+            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtTelSec);
+            this.Controls.Add(this.txtEmail);
+
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "frmAgregarProveedores";
-            this.Text = "Agregar Proveedores";
+            this.Controls.Add(this.btnCancelar);
+
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblEmpresa;
+        private System.Windows.Forms.Label lblProducto;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.Label lblTelSec;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox txtEmpresa;
+        private System.Windows.Forms.TextBox txtProducto;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtTelSec;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnCancelar;
     }

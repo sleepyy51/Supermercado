@@ -45,8 +45,13 @@ namespace Supermercado
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-            frmAgregarProveedores p = new frmAgregarProveedores();
+            frmProveedores p = new frmProveedores();
             p.ShowDialog();
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

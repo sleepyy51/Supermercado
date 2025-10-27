@@ -146,6 +146,12 @@
     <Compile Include="Forms\frmAgregarProveedores.Designer.cs">
       <DependentUpon>frmAgregarProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAgregarProveedores.resx">
       <DependentUpon>frmAgregarProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

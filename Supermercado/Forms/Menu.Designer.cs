@@ -144,6 +144,7 @@
             this.btnVentas.TabIndex = 7;
             this.btnVentas.Text = "💰 Ventas";
             this.btnVentas.UseVisualStyleBackColor = false;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // labHora
             // 
