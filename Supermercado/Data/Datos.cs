@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
-using System.Data;
 using System.Threading.Tasks;
-using Npgsql;
+using System.Windows.Forms;
 
 namespace Supermercado.Data
 {
@@ -86,6 +87,28 @@ namespace Supermercado.Data
             {
                 Console.WriteLine("Error al probar la conexión: " + ex.Message);
                 return false;
+            }
+        }
+
+        public String GetValue(string query)
+        {
+            try
+            {
+                NpgsqlCommand com = new NpgsqlCommand(query, GetConnection());
+                object result = com.ExecuteScalar();
+                if (result != null)
+                {
+                    return result.ToString();
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener el valor: " + ex.Message);
+                return null;
             }
         }
     }

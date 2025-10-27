@@ -44,7 +44,12 @@ namespace Supermercado.Forms
 
         public void agregarDetalles()
         {
-            // This method can be used to add additional details if needed in the future.
+            frmAgregarDetallesFactura frd = new frmAgregarDetallesFactura(id);
+            frd.ShowDialog();
+            if (frd.IsDisposed)
+            {
+                this.Dispose();
+            }
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -57,6 +62,16 @@ namespace Supermercado.Forms
                 if (datos.ExecuteQuery(query))
                 {
                     MessageBox.Show("Factura agregada con éxito", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogResult respuesta = MessageBox.Show(
+                        "¿Desea agregar más detalles a la factura?",
+                        "Agregar detalles",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        agregarDetalles();
+                    }
                     this.Dispose();
                 }
                 else
