@@ -51,8 +51,8 @@ namespace Supermercado.Forms
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string r = dgvEmpleados[0, dgvEmpleados.CurrentCell.RowIndex].Value.ToString();
-            frmAgregarClientes box = new frmAgregarClientes(Convert.ToInt32(r));
-            box.ShowDialog();
+            frmAgregarEmpleados emp = new frmAgregarEmpleados(Convert.ToInt32(r));
+            emp.ShowDialog();
         }
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -69,6 +69,19 @@ namespace Supermercado.Forms
                 {
                     MessageBox.Show("Error al eliminar el registro", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            DataSet ds = datos.getAllData("SELECT * FROM \"empleados\" Where nombre ilike '" + txtBuscar.Text + "%' OR apellido ilike '" + txtBuscar.Text + "' OR email ilike '" + txtBuscar.Text + "%';");
+            if (ds != null)
+            {
+                dgvEmpleados.DataSource = ds.Tables[0];
+            }
+            else
+            {
+                MessageBox.Show("Error al cargar los datos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

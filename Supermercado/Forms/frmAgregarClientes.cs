@@ -60,19 +60,19 @@ namespace Supermercado.Forms
             }
             else
             {
-                string query = "UPDATE INTO \"clientes\" SET " +
-                           "nombre='" + txtNombre.Text + "', apellido='" + txtApellido.Text + "', tipo_doc='" + txtTipoDoc.Text + "', nro_doc='" + txtNumDoc.Text + "', nro_tel_princ='" + txtTelefono.Text + "', nro_tel_sec'" + txtTelefonoSec.Text + "', email='" + txtEmail.Text + "');";
+                string query = "UPDATE \"clientes\" SET " +
+                           "nombre='" + txtNombre.Text + "', apellido='" + txtApellido.Text + "', tipo_doc='" + txtTipoDoc.Text + "', nro_doc='" + txtNumDoc.Text + "', nro_tel_princ='" + txtTelefono.Text + "', nro_tel_sec='" + txtTelefonoSec.Text + "', email='" + txtEmail.Text +"' WHERE id="+ id + ";";
                 if (datos.ExecuteQuery(query))
                 {
-                    MessageBox.Show("Cliente agregado con éxito", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Cliente actualizado con éxito", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Dispose();
                 }
                 else
                 {
-                    MessageBox.Show("Error al agregar el cliente", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error al actualizar el cliente", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            
+            this.Dispose();
         }
     }
 }
