@@ -110,6 +110,12 @@
     <Compile Include="Forms\frmAgregarEmpleados.Designer.cs">
       <DependentUpon>frmAgregarEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmAgregarFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAgregarFacturas.Designer.cs">
+      <DependentUpon>frmAgregarFacturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,18 @@
     <Compile Include="Forms\frmAgregarClientes.Designer.cs">
       <DependentUpon>frmAgregarClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFacturas.Designer.cs">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAgregarProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAgregarProveedores.Designer.cs">
+      <DependentUpon>frmAgregarProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +157,9 @@
     <EmbeddedResource Include="Forms\frmAgregarEmpleados.resx">
       <DependentUpon>frmAgregarEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAgregarFacturas.resx">
+      <DependentUpon>frmAgregarFacturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +168,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEmpleados.resx">
       <DependentUpon>frmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFacturas.resx">
+      <DependentUpon>frmFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAgregarProveedores.resx">
+      <DependentUpon>frmAgregarProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

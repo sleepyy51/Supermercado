@@ -36,5 +36,17 @@ namespace Supermercado
             frmEmpleados emp = new frmEmpleados();
             emp.ShowDialog();
         }
+
+        private void btnFacturas_Click(object sender, EventArgs e)
+        {
+            frmFacturas f = new frmFacturas();
+            f.ShowDialog();
+        }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            frmAgregarProveedores p = new frmAgregarProveedores();
+            p.ShowDialog();
+        }
     }
 }

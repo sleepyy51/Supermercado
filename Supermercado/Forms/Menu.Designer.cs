@@ -97,6 +97,7 @@
             this.btnFacturas.TabIndex = 4;
             this.btnFacturas.Text = "🧾 Facturas";
             this.btnFacturas.UseVisualStyleBackColor = false;
+            this.btnFacturas.Click += new System.EventHandler(this.btnFacturas_Click);
             // 
             // btnProductos
             // 
@@ -127,6 +128,7 @@
             this.btnProveedores.TabIndex = 6;
             this.btnProveedores.Text = "🚚 Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = false;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // btnVentas
             // 

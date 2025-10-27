@@ -74,6 +74,7 @@ namespace Supermercado.Forms
                     MessageBox.Show("Error al actualizar el empleado", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            this.Dispose();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
