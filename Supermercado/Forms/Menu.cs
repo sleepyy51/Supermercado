@@ -60,5 +60,17 @@ namespace Supermercado
             frmProductos p = new frmProductos();
             p.ShowDialog();
         }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            frmReporte rp = new frmReporte();
+            rp.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmAgregarDetallesFactura df = new frmAgregarDetallesFactura();
+            df.ShowDialog();
+        }
     }
 }
