@@ -25,12 +25,6 @@ namespace Supermercado
             labHora.Text = DateTime.Now.ToString("t");
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmClientes c = new frmClientes();
-            c.Show();
-        }
-
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
             frmEmpleados emp = new frmEmpleados();
@@ -67,10 +61,28 @@ namespace Supermercado
             rp.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnDetallesFacturas_Click(object sender, EventArgs e)
         {
-            frmAgregarDetallesFactura df = new frmAgregarDetallesFactura();
+            frmDetallesFacturas df = new frmDetallesFacturas();
             df.ShowDialog();
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            frmClientes c = new frmClientes();
+            c.Show();
+        }
+
+        private void btnCompras_Click(object sender, EventArgs e)
+        {
+            frmComprasClientes cc = new frmComprasClientes();
+            cc.ShowDialog();
+        }
+
+        private void btnVentasProductos_Click(object sender, EventArgs e)
+        {
+            frmAgregarVentasProductos agvp = new frmAgregarVentasProductos();
+            agvp.ShowDialog();
         }
     }
 }

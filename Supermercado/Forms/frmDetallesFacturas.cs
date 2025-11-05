@@ -62,7 +62,7 @@ namespace Supermercado.Forms
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             DataSet ds = datos.getAllData("SELECT * FROM facturas_detalles Where " +
             "descr_factura like '" + txtBuscar.Text + "%' OR " +
@@ -75,6 +75,11 @@ namespace Supermercado.Forms
             {
                 MessageBox.Show("Error al cargar los datos");
             }
+        }
+
+        private void frmDetallesFacturas_Load(object sender, EventArgs e)
+        {
+            mostrarDatos();
         }
     }
 }

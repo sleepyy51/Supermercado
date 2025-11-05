@@ -126,6 +126,24 @@
     <Compile Include="Data\InformeC1.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\frmAgregarCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAgregarCompras.Designer.cs">
+      <DependentUpon>frmAgregarCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAgregarVentasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAgregarVentasProductos.Designer.cs">
+      <DependentUpon>frmAgregarVentasProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmComprasClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmComprasClientes.Designer.cs">
+      <DependentUpon>frmComprasClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmAgregarDetallesFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +234,12 @@
     <Compile Include="Forms\frmVentas.Designer.cs">
       <DependentUpon>frmVentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmVentasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVentasProductos.Designer.cs">
+      <DependentUpon>frmVentasProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +251,15 @@
     <EmbeddedResource Include="Data\InformeC.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InformeC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAgregarCompras.resx">
+      <DependentUpon>frmAgregarCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAgregarVentasProductos.resx">
+      <DependentUpon>frmAgregarVentasProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmComprasClientes.resx">
+      <DependentUpon>frmComprasClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAgregarDetallesFactura.resx">
       <DependentUpon>frmAgregarDetallesFactura.cs</DependentUpon>
@@ -272,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmVentas.resx">
       <DependentUpon>frmVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVentasProductos.resx">
+      <DependentUpon>frmVentasProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

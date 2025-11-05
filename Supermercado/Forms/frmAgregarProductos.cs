@@ -1,4 +1,5 @@
 ﻿using ImageMagick;
+using ImageMagick.Drawing;
 using Supermercado.Data;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace Supermercado.Forms
 {
     public partial class frmAgregarProductos : Form
     {
+        Datos datos = new Datos();
         public int id = -1;
 
         public frmAgregarProductos()
@@ -58,6 +60,22 @@ namespace Supermercado.Forms
                     MessageBox.Show("Error al cargar los datos del producto: " + ex.Message, "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
+            }
+        }
+
+        private void agregarDatos()
+        {
+            DataSet ds = datos.getAllData("SELECT id FROM \"proveedores\" ORDER BY id");
+            try
+            {
+                cbProveedor.DataSource = ds.Tables[0];
+                cbProveedor.DisplayMember = "id";
+                cbProveedor.ValueMember = "id";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al agregar los datos: " + ex.Message, "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
         }
 
@@ -120,6 +138,11 @@ namespace Supermercado.Forms
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void frmAgregarProductos_Load(object sender, EventArgs e)
+        {
+            agregarDatos();
         }
     }
 }

@@ -23,13 +23,13 @@ namespace Supermercado.Forms
         {
             InitializeComponent();
             Datos data = new Datos();
-            DataSet ds = data.getAllData("SELECT * FROM \"factura_detalles\" WHERE id=" + id);
+            DataSet ds = data.getAllData("SELECT * FROM \"facturas_detalles\" WHERE id=" + id);
             txtFactId.Text = ds.Tables[0].Rows[0]["id_factura"].ToString();
             txtTipoFac.Text = ds.Tables[0].Rows[0]["tipo"].ToString();
             txtDesc.Text = ds.Tables[0].Rows[0]["descr_factura"].ToString();
             txtCostoAsc.Text = ds.Tables[0].Rows[0]["costo_asoc"].ToString();
             txtIva.Text = ds.Tables[0].Rows[0]["iva"].ToString();
-            txtPago.Text = ds.Tables[0].Rows[0]["medio_pago"].ToString();
+            txtPago.Text = ds.Tables[0].Rows[0]["medio_de_pago"].ToString();
             txtDesPago.Text = ds.Tables[0].Rows[0]["descr_pago"].ToString();
             this.id = id;
             btnAgregar.Text = "Actualizar";
@@ -45,7 +45,7 @@ namespace Supermercado.Forms
             Datos datos = new Datos();
             if (id == -1)
             {
-                string query = "INSERT INTO \"factura_detalles\" (id_factura, tipo, descr_factura, costo_asoc, iva, medio_pago, descr_pago) " +
+                string query = "INSERT INTO \"facturas_detalles\" (id_factura, tipo, descr_factura, costo_asoc, iva, medio_pago, descr_pago) " +
                            "VALUES ('" + txtFactId.Text + "', '" + txtTipoFac.Text + "', '" + txtDesc.Text + "', '" + txtCostoAsc.Text + "', '" + txtIva.Text + "', '" + txtPago.Text + "', '" + txtDesPago.Text + "');";
                 if (datos.ExecuteQuery(query))
                 {
@@ -59,7 +59,7 @@ namespace Supermercado.Forms
             }
             else
             {
-                string query = "UPDATE \"factura_detalles\" SET " +
+                string query = "UPDATE \"facturas_detalles\" SET " +
                            "factura_id='" + txtFactId.Text + "', tipo='" + txtTipoFac + "', descr_factura='" + txtDesc.Text + "', costo_asoc='" + txtCostoAsc.Text + "', iva='" + txtIva.Text + "', medio_pago='" + txtPago.Text + "', descr_pago='" + txtDesPago.Text + "', '" + "' WHERE id=" + id + ";";
                 if (datos.ExecuteQuery(query))
                 {
